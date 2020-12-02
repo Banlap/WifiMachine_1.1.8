@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_T"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/rg_chubianyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rg_border"
+        android:contentDescription="触发边沿" >
+
+        <RadioButton
+            android:id="@+id/rb_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/purple" 
+            android:text="UP" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple" 
+            android:text="DN" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_chutongdao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rg_border"
+        android:contentDescription="触发通道" >
+
+        <RadioButton
+            android:id="@+id/rb_ch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/purple" 
+            android:text="CH1" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_ch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple" 
+            android:text="CH2" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_chumoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rg_border"
+        android:contentDescription="触发模式" >
+
+        <RadioButton
+            android:id="@+id/rb_aut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple" 
+            android:checked="true"
+            android:text="AUT" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_nor"
+            android:layout_width="wrap_content"
+            android:textColor="@color/purple" 
+            android:layout_height="wrap_content"
+            android:text="NOR" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_sig"
+            android:textColor="@color/purple" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIG" >
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <ImageView
+        android:id="@+id/iv_bg_history"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        />
+
+    <ImageView
+        android:id="@+id/iv_plane"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/plane"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_bg_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/iv_bg_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        />
+
+    <Button
+        android:id="@+id/btn_Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn_purple"
+        android:text="搜索"
+        android:textColor="@android:color/white"
+        android:onClick="LoginActivityOnClick"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn_yellow"
+        android:clickable="false"
+        android:onClick="LoginActivityOnClick"
+        android:text="登录"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/view"     
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_edit_ip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入IP建立连接： "
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/input_ip"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:hint="可手动输入ip建立连接"
+        android:maxLength="15"
+        style="@style/inputBackground"
+        />
+
+    <TextView
+        android:id="@+id/tv_ip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史记录： "
+        android:textSize="17dp"/>
+
+    <ListView
+        android:id="@+id/lv_ip_history"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP隐私协议"
+        android:textSize="15dp"
+        android:onClick="LoginActivityOnClick"/>
+
+</RelativeLayout>

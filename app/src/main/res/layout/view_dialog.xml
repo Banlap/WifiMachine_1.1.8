@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X轴放大"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/view_dialog_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_reduce"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/reduce" />
+
+        <TextView
+            android:id="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1"
+            android:textColor="@color/blue"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="X轴居中"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/tv_sign_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="信号发生器设置"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/tv_xcursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水平游标"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/tv_ycursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垂直游标"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/tv_disconnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="断开连接"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/tv_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="退出"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/view_dialog_text_size" />
+
+</LinearLayout>

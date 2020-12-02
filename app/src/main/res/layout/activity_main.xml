@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_Triged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Triged"
+        android:textColor="@color/purple" />
+
+    <FrameLayout
+        android:id="@+id/fl_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="@color/red" />
+
+        <View
+            android:id="@+id/v_progress"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_progress_btn_border" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T:10mV"
+        android:textColor="@color/purple" />
+
+    <View
+        android:id="@+id/v_yLine_red"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dashfive_red"
+        android:layerType="software"/>
+    <View
+        android:id="@+id/v_yLine_blue"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dashfive_blue"
+        android:layerType="software"/>
+
+    <View
+        android:id="@+id/v_yLine_default"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dashfive_default"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/tv_tr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_menu_border"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:text="···" />
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_border"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y1:10mV"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tv_bl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y2:10mV"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tv_bl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X:250ns"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tv_bl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T:0nS"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tv_bl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="延迟:0mS"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tv_bl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电量：50%"
+        android:textColor="@color/purple" />
+
+    <View
+        android:id="@+id/view_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view_cover_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/red_triangle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_triangle" />
+
+    <ImageView
+        android:id="@+id/blue_triangle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_triangle" />
+
+</FrameLayout>
